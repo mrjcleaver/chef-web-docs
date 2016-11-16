@@ -104,6 +104,11 @@ A sample solo.rb file that contains all possible settings (listed alphabetically
                   '/var/chef/site-cookbooks'
                  ]
    data_bag_path '/var/chef/data_bags'
+   data_collector.mode :both
+   data_collector.server_url "https://my-automate-server.mycompany.com/data-collector/v0/"
+   data_collector.raise_on_failure :true
+   data_collector.token "TOKEN"
+   data_collector.organization "test"
    environment 'production'
    environment_path '/var/chef/environments'
    file_backup_path '/var/chef/backup'
